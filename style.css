@@ -1,0 +1,90 @@
+html {
+    overflow-y: hidden;
+}
+div#bleftbox {
+    background-color:#3ab397;
+    float: left;
+    width: 30%;
+    height: 400px;
+    padding: 20px;
+}
+div#rightbox{
+    background-color: rgba(255,255,255,0.7);
+    float: left;
+    width: 400px;
+    height: 800px;
+}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  section#mainbox {
+    margin-left: 25%;
+    text-align: center;
+    margin-top:25px;
+    
+}
+input{
+    margin: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 25px;
+    border-radius: 5px;
+}
+button {
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #3ab397;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #176b57;
+    border: 1px solid #176b57;
+}
+
+button#signin {
+    background-color: #3ab397;
+    border: 2px solid #fff;
+}
+input[type="text"] {
+    background-image: url(images/user.jpg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 0 2em 0 2em;
+}
+input[type="email"] {
+    background-image: url(images/email.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 0 2em 0 2em;
+}
+input[type="password"] {
+    background-image: url(images/password.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 0 2em 0 2em;
+}
+@media only screen and (max-width: 1024px) {
+    section#mainbox {
+        margin-left: 15%;
+    }
+  }
+  @media only screen and (max-width: 756px) {
+    section#mainbox {
+        margin-left: 0;
+    }
+  }
+  @media only screen and (max-width: 651px) {
+    div#rightbox {
+        width: 200px;
+    }
+    section#mainbox {
+        margin-left: 0;
+    }
+    button#signin {
+        width: 70%;
+    }
+  }
